@@ -1,0 +1,32 @@
+@import './styles/variable.scss';
+
+.app {
+  max-width: 1024px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__sort {
+    @media (#{$above-tablet}) {
+      width: 100%;
+    }
+  }
+
+  &__data-source {
+    order: -1;
+
+    @media (#{$above-tablet}) {
+      order: unset;
+      width: 15%;
+    }
+  }
+
+  &__articles {
+    width: 100%;
+
+    @media (#{$above-tablet}) {
+      width: 85%;
+    }
+  }
+}

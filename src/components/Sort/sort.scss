@@ -1,0 +1,42 @@
+.sort {
+  text-align: right;
+
+  &__arrows {
+    padding-right: 18px;
+    position: relative;
+    width: 100%;
+    color: #000;
+
+    &:before,
+    &:after {
+      border: 6px solid transparent;
+      content: '';
+      display: block;
+      height: 0;
+      right: 5px;
+      top: 50%;
+      position: absolute;
+      width: 0;
+    }
+
+    &:before {
+      margin-top: -12px;
+      border-bottom-color: #666;
+    }
+
+    &:after {
+      margin-top: 2px;
+      border-top-color: #666;
+    }
+
+    &:hover:before {
+      cursor: pointer;
+      border-bottom-color: #000;
+    }
+
+    &:hover:after {
+      cursor: pointer;
+      border-top-color: #000;
+    }
+  }
+}

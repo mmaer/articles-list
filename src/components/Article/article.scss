@@ -1,0 +1,42 @@
+@import '../../styles/variable.scss';
+
+.article {
+  display: flex;
+  margin: 5px;
+
+  &__image {
+    margin-right: 20px;
+    width: 33%;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+
+    @media (#{$above-tablet}) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    display: none;
+
+    @media (#{$above-tablet}) {
+      display: block;
+      width: 100%;
+    }
+  }
+}

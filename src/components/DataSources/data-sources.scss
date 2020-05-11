@@ -1,0 +1,16 @@
+@import '../../styles/variable.scss';
+
+.data-sources {
+  &__sources {
+    display: flex;
+    margin: 5px 0;
+
+    @media (#{$above-tablet}) {
+      flex-direction: column;
+    }
+  }
+
+  &__source {
+    margin-right: 5px;
+  }
+}
