@@ -1,6 +1,6 @@
 import React from 'react';
 
-import imageNotFound from '../../images/image-not-found.png'
+import imageNotFound from '../../images/image-not-found.png';
 
 import './article.scss';
 

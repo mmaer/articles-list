@@ -34,9 +34,11 @@ const App = () => {
 
       <div className="app__articles">
         {error ? (
-          <div>
+          <div className="app__error">
             <span>Something went wrong.</span>
-            <button onClick={refreshArticles}>Refresh Articles</button>
+            <button className="app__button app__button--error" onClick={refreshArticles}>
+              Refresh Articles
+            </button>
           </div>
         ) : (
           data

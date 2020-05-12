@@ -1,6 +1,12 @@
 @import '../../styles/variable.scss';
 
 .data-sources {
+  font-size: 16px;
+
+  @media (#{$above-tablet}) {
+    font-size: 22px;
+  }
+
   &__sources {
     display: flex;
     margin: 5px 0;
@@ -12,5 +18,16 @@
 
   &__source {
     margin-right: 5px;
+
+    input {
+      margin-right: 5px;
+      height: 13px;
+      width: 13px;
+
+      @media (#{$above-tablet}) {
+        height: 20px;
+        width: 20px;
+      }
+    }
   }
 }

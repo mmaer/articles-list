@@ -2,21 +2,29 @@
 
 .app {
   max-width: 1024px;
-  margin: 20px auto;
+  margin: 0 auto;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
   &__sort {
+    display: flex;
+    align-items: center;
+
     @media (#{$above-tablet}) {
       width: 100%;
+      justify-content: flex-end;
     }
   }
 
   &__data-source {
     order: -1;
+    display: flex;
+    align-items: center;
 
     @media (#{$above-tablet}) {
+      align-items: flex-start;
       order: unset;
       width: 15%;
     }
@@ -24,9 +32,33 @@
 
   &__articles {
     width: 100%;
+    margin-top: 10px;
 
     @media (#{$above-tablet}) {
       width: 85%;
+    }
+  }
+
+  &__error {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    font-size: 24px;
+  }
+
+  &__button {
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 15px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--error {
+      background: #e01919;
     }
   }
 }

@@ -1,5 +1,13 @@
+@import '../../styles/variable.scss';
+
 .sort {
+  font-size: 16px;
   text-align: right;
+  margin-right: 20px;
+
+  @media (#{$above-tablet}) {
+    font-size: 22px;
+  }
 
   &__arrows {
     padding-right: 18px;
@@ -9,18 +17,18 @@
 
     &:before,
     &:after {
-      border: 6px solid transparent;
+      border: 10px solid transparent;
       content: '';
       display: block;
       height: 0;
-      right: 5px;
+      right: -10px;
       top: 50%;
       position: absolute;
       width: 0;
     }
 
     &:before {
-      margin-top: -12px;
+      margin-top: -20px;
       border-bottom-color: #666;
     }
 
