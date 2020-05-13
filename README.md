@@ -28,3 +28,11 @@ The server has 2 endpoints:
 `/articles/fashion` - returns a list of articles from `fashion` category
 
 Be aware of backend errors!
+
+## TODO
+- [ ] Write Unit tests for App component and for fetchArticles function
+- [ ] Fix bug in server.js
+- [ ] Improve UI
+- [ ] Improve Sort icon
+- [ ] Create config for dev and prod environment(move URLS and Sources to config).
+- [ ] Implement image lazy loading
