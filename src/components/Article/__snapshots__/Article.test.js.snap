@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article component Should match snapshot 1`] = `
+<div
+  className="article"
+>
+  <div
+    className="article__image"
+  >
+    <img
+      alt="Vålerengas førsterekke smadrer rivalene: - Seriegullet er I våre hender"
+      src="https://placeimg.com/280/180/nature"
+    />
+  </div>
+  <div
+    className="article__content"
+  >
+    <div
+      className="article__title-date"
+    >
+      <div
+        className="article__title"
+      >
+        <h2>
+          Vålerengas førsterekke smadrer rivalene: - Seriegullet er I våre hender
+        </h2>
+      </div>
+      <div
+        className="article__date"
+      >
+        2. februar 2019
+      </div>
+    </div>
+    <div
+      className="article__text"
+    >
+      MERÅKER (VG) Finn-Hågen Krogh (28) opplevde den gedigne nedturen da han ble vraket til OL-sprinten i Sotsji etter at han først var tatt ut på laget. Nå føler han seg aldri trygg på å få starte i mesterskap.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Article component Should match snapshot when image is empty 1`] = `
+<div
+  className="article"
+>
+  <div
+    className="article__image"
+  >
+    <img
+      alt="Vålerengas førsterekke smadrer rivalene: - Seriegullet er I våre hender"
+      src=""
+    />
+  </div>
+  <div
+    className="article__content"
+  >
+    <div
+      className="article__title-date"
+    >
+      <div
+        className="article__title"
+      >
+        <h2>
+          Vålerengas førsterekke smadrer rivalene: - Seriegullet er I våre hender
+        </h2>
+      </div>
+      <div
+        className="article__date"
+      >
+        2. februar 2019
+      </div>
+    </div>
+    <div
+      className="article__text"
+    >
+      MERÅKER (VG) Finn-Hågen Krogh (28) opplevde den gedigne nedturen da han ble vraket til OL-sprinten i Sotsji etter at han først var tatt ut på laget. Nå føler han seg aldri trygg på å få starte i mesterskap.
+    </div>
+  </div>
+</div>
+`;

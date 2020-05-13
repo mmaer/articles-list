@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sort component Should match snapshot 1`] = `
+<div
+  className="sort"
+>
+  Sort by date:
+  <span
+    className="sort__arrows"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
+  />
+</div>
+`;

@@ -13,7 +13,7 @@ const MONTHS_MAP = {
   desember: 'december',
 };
 
-const formatDate = date => {
+export const formatDate = date => {
   const month = date.split(' ')[1];
   const enDate = date.replace(month, MONTHS_MAP[month]);
   return new Date(enDate);

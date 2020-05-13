@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataSources component Should match snapshot 1`] = `
+<div
+  className="data-sources"
+>
+  <div
+    className="data-sources__text"
+  >
+    Data sources:
+  </div>
+  <div
+    className="data-sources__sources"
+  >
+    <div
+      className="data-sources__source"
+    >
+      <label>
+        <input
+          checked={true}
+          name="fashion"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        Fashion
+      </label>
+    </div>
+    <div
+      className="data-sources__source"
+    >
+      <label>
+        <input
+          checked={true}
+          name="sport"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        Sports
+      </label>
+    </div>
+  </div>
+</div>
+`;
