@@ -24,7 +24,7 @@ describe('DataSources component', () => {
     const mockSetSource = jest.fn();
     const wrapper = mount(<DataSources sources={SOURCES} setSource={mockSetSource} />);
     const fashionInput = wrapper.find('input[name="fashion"]');
-    fashionInput.simulate('change', { target: { name: SOURCES[0] } });
+    fashionInput.simulate('change');
 
     expect(mockSetSource.mock.calls[0]).toEqual([[SOURCES[1]]]);
   });
@@ -32,8 +32,8 @@ describe('DataSources component', () => {
   it('Should add one source when checkbox is clicked', () => {
     const mockSetSource = jest.fn();
     const wrapper = mount(<DataSources sources={[SOURCES[0]]} setSource={mockSetSource} />);
-    const fashionInput = wrapper.find('input[name="fashion"]');
-    fashionInput.simulate('change', { target: { name: SOURCES[1] } });
+    const fashionInput = wrapper.find('input[name="sport"]');
+    fashionInput.simulate('change');
 
     expect(mockSetSource.mock.calls[0]).toEqual([SOURCES]);
   });
